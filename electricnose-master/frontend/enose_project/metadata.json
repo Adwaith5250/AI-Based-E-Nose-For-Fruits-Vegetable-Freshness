@@ -1,0 +1,6 @@
+{
+  "name": "Electronic Nose: AI-Based Food Freshness & Health Analyzer",
+  "description": "Electronic Nose: AI-Based Food Freshness & Health Analyzer — FSSAI and BRCGS Food Safety Global Standard compliant IoT and AI-powered food freshness diagnostic platform analyzing multispectral sensor telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

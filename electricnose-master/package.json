@@ -1,0 +1,12 @@
+{
+  "name": "electricnose",
+  "private": true,
+  "scripts": {
+    "dev": "python run_dev.py",
+    "frontend:dev": "npm --prefix frontend/enose_project run dev",
+    "build": "npm --prefix frontend/enose_project run build",
+    "lint": "npm --prefix frontend/enose_project run lint",
+    "frontend:install": "npm --prefix frontend/enose_project install",
+    "backend": "python -m uvicorn backend.api_server:app --host 127.0.0.1 --port 8000"
+  }
+}

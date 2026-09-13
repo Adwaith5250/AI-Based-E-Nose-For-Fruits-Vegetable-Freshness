@@ -1,0 +1,11 @@
+{
+  "name": "electricnose-frontend",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix enose_project run dev",
+    "build": "npm --prefix enose_project run build",
+    "lint": "npm --prefix enose_project run lint",
+    "preview": "npm --prefix enose_project run preview",
+    "install:app": "npm --prefix enose_project install"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "apple": {
+    "nutrition_per_100g": {"calories": "52 kcal", "carbs": "14 g", "fiber": "2.4 g", "vitamin_c": "4.6 mg"},
+    "treatment_profile": "Often coated with food-grade wax (shellac or carnauba) to retain moisture and add shine. Possible pesticide residue on skin.",
+    "recommendation": "Wash under running water for 20-30 seconds; a brief baking-soda rinse helps remove surface residue."
+  },
+  "tomato": {
+    "nutrition_per_100g": {"calories": "18 kcal", "carbs": "3.9 g", "fiber": "1.2 g", "vitamin_c": "14 mg"},
+    "treatment_profile": "Tomatoes may be harvested mature-green and exposed to controlled ethylene to synchronize ripening. Food-grade coatings can reduce moisture loss during transport.",
+    "recommendation": "Wash under running water before cutting; keep uncut tomatoes at room temperature until ripe and refrigerate only after cutting."
+  },
+  "potato": {
+    "nutrition_per_100g": {"calories": "77 kcal", "carbs": "17 g", "fiber": "2.2 g", "vitamin_c": "20 mg"},
+    "treatment_profile": "Commercial potatoes may receive approved sprout-inhibitor treatments during storage. Green skin indicates light exposure and possible elevated glycoalkaloids.",
+    "recommendation": "Store in a cool, dry, dark, ventilated place; discard potatoes with extensive greening, bitter taste, or advanced decay."
+  },
+  "banana": {
+    "nutrition_per_100g": {"calories": "89 kcal", "carbs": "22.8 g", "fiber": "2.6 g", "vitamin_c": "8.7 mg"},
+    "treatment_profile": "Bananas are commonly harvested green and may be ripened in controlled ethylene rooms. The peel is a natural barrier and is not normally wax-coated.",
+    "recommendation": "Keep unripe bananas at room temperature; separate ripe fruit from other produce to slow or control ethylene-driven ripening."
+  },
+  "carrot": {
+    "nutrition_per_100g": {"calories": "41 kcal", "carbs": "9.6 g", "fiber": "2.8 g", "vitamin_c": "5.9 mg"},
+    "treatment_profile": "Carrots are commonly washed and chilled after harvest. Surface moisture and damaged tissue increase the risk of soft rot during storage.",
+    "recommendation": "Remove leafy tops, refrigerate in a ventilated container, and wash thoroughly under running water before eating."
+  }
+}

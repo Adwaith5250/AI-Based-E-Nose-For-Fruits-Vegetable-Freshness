@@ -1,0 +1,372 @@
+@import "tailwindcss";
+
+@theme {
+  /* Unified muted blue (was: green, emerald, lime, teal / sage) */
+  --color-green-50: #151e28;
+  --color-green-100: #222f3f;
+  --color-green-200: #2b3c50;
+  --color-green-300: #364b63;
+  --color-green-400: #445f7e;
+  --color-green-500: #54759c;
+  --color-green-600: #7a97b8;
+  --color-green-700: #a9bbd1;
+  --color-green-800: #cdd8e4;
+  --color-green-900: #e8edf3;
+  --color-green-950: #f5f7fa;
+  --color-emerald-50: #151e28;
+  --color-emerald-100: #222f3f;
+  --color-emerald-200: #2b3c50;
+  --color-emerald-300: #364b63;
+  --color-emerald-400: #445f7e;
+  --color-emerald-500: #54759c;
+  --color-emerald-600: #7a97b8;
+  --color-emerald-700: #a9bbd1;
+  --color-emerald-800: #cdd8e4;
+  --color-emerald-900: #e8edf3;
+  --color-emerald-950: #f5f7fa;
+  --color-lime-50: #151e28;
+  --color-lime-100: #222f3f;
+  --color-lime-200: #2b3c50;
+  --color-lime-300: #364b63;
+  --color-lime-400: #445f7e;
+  --color-lime-500: #54759c;
+  --color-lime-600: #7a97b8;
+  --color-lime-700: #a9bbd1;
+  --color-lime-800: #cdd8e4;
+  --color-lime-900: #e8edf3;
+  --color-lime-950: #f5f7fa;
+  --color-teal-50: #151e28;
+  --color-teal-100: #222f3f;
+  --color-teal-200: #2b3c50;
+  --color-teal-300: #364b63;
+  --color-teal-400: #445f7e;
+  --color-teal-500: #54759c;
+  --color-teal-600: #7a97b8;
+  --color-teal-700: #a9bbd1;
+  --color-teal-800: #cdd8e4;
+  --color-teal-900: #e8edf3;
+  --color-teal-950: #f5f7fa;
+
+  /* Neutral blue-grey (was: cyan, sky, blue, indigo, violet, purple, fuchsia, pink, rose) */
+  --color-cyan-50: #1d1f20;
+  --color-cyan-100: #2f3032;
+  --color-cyan-200: #3b3d40;
+  --color-cyan-300: #494c50;
+  --color-cyan-400: #5d6165;
+  --color-cyan-500: #73787d;
+  --color-cyan-600: #95999d;
+  --color-cyan-700: #babdbf;
+  --color-cyan-800: #d7d9da;
+  --color-cyan-900: #ecedee;
+  --color-cyan-950: #f7f7f8;
+  --color-sky-50: #1d1f20;
+  --color-sky-100: #2f3032;
+  --color-sky-200: #3b3d40;
+  --color-sky-300: #494c50;
+  --color-sky-400: #5d6165;
+  --color-sky-500: #73787d;
+  --color-sky-600: #95999d;
+  --color-sky-700: #babdbf;
+  --color-sky-800: #d7d9da;
+  --color-sky-900: #ecedee;
+  --color-sky-950: #f7f7f8;
+  --color-blue-50: #1d1f20;
+  --color-blue-100: #2f3032;
+  --color-blue-200: #3b3d40;
+  --color-blue-300: #494c50;
+  --color-blue-400: #5d6165;
+  --color-blue-500: #73787d;
+  --color-blue-600: #95999d;
+  --color-blue-700: #babdbf;
+  --color-blue-800: #d7d9da;
+  --color-blue-900: #ecedee;
+  --color-blue-950: #f7f7f8;
+  --color-indigo-50: #1d1f20;
+  --color-indigo-100: #2f3032;
+  --color-indigo-200: #3b3d40;
+  --color-indigo-300: #494c50;
+  --color-indigo-400: #5d6165;
+  --color-indigo-500: #73787d;
+  --color-indigo-600: #95999d;
+  --color-indigo-700: #babdbf;
+  --color-indigo-800: #d7d9da;
+  --color-indigo-900: #ecedee;
+  --color-indigo-950: #f7f7f8;
+  --color-violet-50: #1d1f20;
+  --color-violet-100: #2f3032;
+  --color-violet-200: #3b3d40;
+  --color-violet-300: #494c50;
+  --color-violet-400: #5d6165;
+  --color-violet-500: #73787d;
+  --color-violet-600: #95999d;
+  --color-violet-700: #babdbf;
+  --color-violet-800: #d7d9da;
+  --color-violet-900: #ecedee;
+  --color-violet-950: #f7f7f8;
+  --color-purple-50: #1d1f20;
+  --color-purple-100: #2f3032;
+  --color-purple-200: #3b3d40;
+  --color-purple-300: #494c50;
+  --color-purple-400: #5d6165;
+  --color-purple-500: #73787d;
+  --color-purple-600: #95999d;
+  --color-purple-700: #babdbf;
+  --color-purple-800: #d7d9da;
+  --color-purple-900: #ecedee;
+  --color-purple-950: #f7f7f8;
+  --color-fuchsia-50: #1d1f20;
+  --color-fuchsia-100: #2f3032;
+  --color-fuchsia-200: #3b3d40;
+  --color-fuchsia-300: #494c50;
+  --color-fuchsia-400: #5d6165;
+  --color-fuchsia-500: #73787d;
+  --color-fuchsia-600: #95999d;
+  --color-fuchsia-700: #babdbf;
+  --color-fuchsia-800: #d7d9da;
+  --color-fuchsia-900: #ecedee;
+  --color-fuchsia-950: #f7f7f8;
+  --color-pink-50: #1d1f20;
+  --color-pink-100: #2f3032;
+  --color-pink-200: #3b3d40;
+  --color-pink-300: #494c50;
+  --color-pink-400: #5d6165;
+  --color-pink-500: #73787d;
+  --color-pink-600: #95999d;
+  --color-pink-700: #babdbf;
+  --color-pink-800: #d7d9da;
+  --color-pink-900: #ecedee;
+  --color-pink-950: #f7f7f8;
+  --color-rose-50: #1d1f20;
+  --color-rose-100: #2f3032;
+  --color-rose-200: #3b3d40;
+  --color-rose-300: #494c50;
+  --color-rose-400: #5d6165;
+  --color-rose-500: #73787d;
+  --color-rose-600: #95999d;
+  --color-rose-700: #babdbf;
+  --color-rose-800: #d7d9da;
+  --color-rose-900: #ecedee;
+  --color-rose-950: #f7f7f8;
+
+  /* Muted danger red */
+  --color-red-50: #2a1513;
+  --color-red-100: #43221e;
+  --color-red-200: #542b26;
+  --color-red-300: #6a352f;
+  --color-red-400: #86433c;
+  --color-red-500: #a5534a;
+  --color-red-600: #c07a72;
+  --color-red-700: #d6a9a4;
+  --color-red-800: #e7cdca;
+  --color-red-900: #f4e8e6;
+  --color-red-950: #faf5f4;
+
+  /* Muted warning amber */
+  --color-orange-50: #2a2213;
+  --color-orange-100: #43351e;
+  --color-orange-200: #544326;
+  --color-orange-300: #6a542f;
+  --color-orange-400: #866b3c;
+  --color-orange-500: #a5844a;
+  --color-orange-600: #c0a372;
+  --color-orange-700: #d6c3a4;
+  --color-orange-800: #e7ddca;
+  --color-orange-900: #f4efe6;
+  --color-orange-950: #faf8f4;
+  --color-amber-50: #2a2213;
+  --color-amber-100: #43351e;
+  --color-amber-200: #544326;
+  --color-amber-300: #6a542f;
+  --color-amber-400: #866b3c;
+  --color-amber-500: #a5844a;
+  --color-amber-600: #c0a372;
+  --color-amber-700: #d6c3a4;
+  --color-amber-800: #e7ddca;
+  --color-amber-900: #f4efe6;
+  --color-amber-950: #faf8f4;
+  --color-yellow-50: #2a2213;
+  --color-yellow-100: #43351e;
+  --color-yellow-200: #544326;
+  --color-yellow-300: #6a542f;
+  --color-yellow-400: #866b3c;
+  --color-yellow-500: #a5844a;
+  --color-yellow-600: #c0a372;
+  --color-yellow-700: #d6c3a4;
+  --color-yellow-800: #e7ddca;
+  --color-yellow-900: #f4efe6;
+  --color-yellow-950: #faf8f4;
+
+  /* Neutral blue-grey (was: slate) */
+  --color-slate-50: #1d1e20;
+  --color-slate-100: #2e3033;
+  --color-slate-200: #3a3d41;
+  --color-slate-300: #484c51;
+  --color-slate-400: #5b6167;
+  --color-slate-500: #71777f;
+  --color-slate-600: #93999f;
+  --color-slate-700: #b9bcc1;
+  --color-slate-800: #d6d9db;
+  --color-slate-900: #ecedee;
+  --color-slate-950: #f7f7f8;
+
+  /* text-white was used ~135x as primary readable body text on the old
+     dark background; flip it to a dark slate so it reads on the new
+     white background. bg-black / text-black are left as true black
+     since they're used for modal scrims and print output. */
+  --color-white: #1c2733;
+
+  /* Slightly larger base type scale app-wide (text-xs is used ~275x) */
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.15rem;
+  --text-sm: 0.9375rem;
+  --text-sm--line-height: 1.4rem;
+  --text-base: 1.0625rem;
+  --text-base--line-height: 1.6rem;
+  --text-lg: 1.1875rem;
+  --text-lg--line-height: 1.7rem;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f7f9fb;
+    color: #1c2733;
+    background-image: 
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(84, 117, 156, 0.10), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 0%, rgba(122, 151, 184, 0.08), transparent),
+      radial-gradient(ellipse 60% 40% at 0% 100%, rgba(84, 117, 156, 0.06), transparent),
+      radial-gradient(ellipse 50% 30% at 50% 100%, rgba(84, 117, 156, 0.05), transparent);
+    background-attachment: fixed;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* ==========================================================================
+ * MUTED WHITE & BLUE COLOR GRADING
+ * Clean Slate White, Soft Fog Grey & Desaturated Steel Blue Palette
+ * ========================================================================== */
+
+/* Primary Blue & White Action Gradient */
+.gemini-disco-gradient,
+.organic-grading-gradient,
+.green-black-gradient {
+  background: linear-gradient(135deg, #4a719b 0%, #3c5f85 38%, #54759c 72%, #23374a 100%);
+}
+
+/* Steel Blue Text Gradient on White */
+.gemini-disco-text,
+.organic-grading-text,
+.green-black-text {
+  background: linear-gradient(135deg, #23374a 0%, #3c5f85 35%, #4a719b 70%, #54759c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gemini-disco-border,
+.organic-grading-border,
+.green-black-border {
+  border-image: linear-gradient(135deg, #4a719b, #54759c, #23374a) 1;
+}
+
+/* Elevated White Active Instrument Card */
+.gemini-led-card-active,
+.organic-card-active,
+.green-black-card-active {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(246, 248, 250, 0.99) 100%);
+  border-color: rgba(84, 117, 156, 0.45);
+  box-shadow: 0 4px 24px -4px rgba(84, 117, 156, 0.18), 0 2px 10px -2px rgba(60, 95, 133, 0.12);
+}
+
+.gemini-led-glow-cyan,
+.organic-glow-emerald,
+.green-glow-neon {
+  box-shadow: 0 0 18px -4px rgba(84, 117, 156, 0.35);
+}
+
+.gemini-led-glow-pink,
+.organic-glow-amber,
+.green-glow-lime {
+  box-shadow: 0 0 18px -4px rgba(74, 113, 155, 0.30);
+}
+
+.gemini-led-glow-violet,
+.organic-glow-leaf,
+.green-glow-mint {
+  box-shadow: 0 0 18px -4px rgba(97, 136, 171, 0.32);
+}
+
+/* Clean White & Fog Grey Surface Panels */
+.surface-panel {
+  background-color: #ffffff;
+  border-color: #e2e8ee;
+}
+
+.surface-panel-elevated {
+  background-color: #fbfcfd;
+  border-color: #d6dfe8;
+}
+
+/* Blue & Amber/Red Freshness Grade Badges */
+.status-pill-fresh {
+  background-color: rgba(84, 117, 156, 0.10);
+  color: #3c5f85;
+  border: 1px solid rgba(84, 117, 156, 0.35);
+  box-shadow: 0 0 10px rgba(84, 117, 156, 0.12);
+}
+
+.status-pill-ripe {
+  background-color: rgba(97, 136, 171, 0.10);
+  color: #436790;
+  border: 1px solid rgba(97, 136, 171, 0.32);
+  box-shadow: 0 0 10px rgba(97, 136, 171, 0.10);
+}
+
+.status-pill-overripe {
+  background-color: rgba(190, 144, 66, 0.12);
+  color: #96702e;
+  border: 1px solid rgba(190, 144, 66, 0.35);
+  box-shadow: 0 0 10px rgba(190, 144, 66, 0.10);
+}
+
+.status-pill-rotten {
+  background-color: rgba(173, 66, 66, 0.12);
+  color: #973939;
+  border: 1px solid rgba(173, 66, 66, 0.35);
+  box-shadow: 0 0 10px rgba(173, 66, 66, 0.10);
+}
+
+/* Soft Blue-Grey Scrollbar on White */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f3f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c3ceda;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #54759c;
+}
+
+/* Print Specific Optimizations */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    background-image: none !important;
+  }
+  
+  header, footer, #diagnostic-report-section, #food-selector-section, #scan-section, #storage-selection-section {
+    display: none !important;
+  }
+}
+

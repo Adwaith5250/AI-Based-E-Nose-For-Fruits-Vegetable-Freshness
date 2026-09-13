@@ -1,0 +1,5 @@
+,fresh,ripe,overripe,rotten
+fresh,623,31,0,0
+ripe,51,172,15,0
+overripe,0,17,131,10
+rotten,0,0,11,169
